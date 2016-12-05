@@ -2,7 +2,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>今日から君は富士山だ</title>
+		<title>今日から君は</title>
 		<style type="text/css">
 			html,body{height:100%;margin:0;padding:0;}
 			#map{height:100%;}
@@ -20,6 +20,12 @@
 					mapTypeId:google.maps.MapTypeId.SATELLITE,
 					zoom:20
 				});
+				var infowindow=new google.maps.InfoWindow({
+					content:'今日から君は富士山だ！',
+					position:{lat:35.360556,lng:138.727778},
+					pixelOffset:new google.maps.Size(0,-50)
+				});
+				infowindow.setMap(map);
 			}
 		</script>
 		
